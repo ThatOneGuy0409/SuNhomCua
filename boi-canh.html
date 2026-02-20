@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiểu sử Phan Châu Trinh - Bối Cảnh Lịch Sử</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        
+        @media (max-width: 768px) {
+            .hero h1 { 
+                font-size: 2.5rem; 
+            }
+            .hero p { 
+                font-size: 1.2rem; 
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            nav ul li { 
+                margin: 5px 10px; 
+            }
+            .info-block {
+                padding: 15px; 
+            }
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #333; background-color: #fdfaf6; }
+        
+        header { background-color: #1a1a1a; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.6); }
+        nav ul { list-style: none; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding: 15px 0; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { color: #d4af37; text-decoration: none; font-weight: bold; font-size: 15px; font-family: Arial, sans-serif; text-transform: uppercase; padding: 8px 0; position: relative; transition: color 0.3s ease; }
+        nav ul li a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: 0; left: 50%; background-color: #d4af37; transition: all 0.3s ease; transform: translateX(-50%); }
+        nav ul li a:hover, nav ul li a.active { color: #ffffff; }
+        nav ul li a:hover::after, nav ul li a.active::after { width: 100%; }
+        
+        nav ul li a.btn-quiz { background-color: #8b0000; color: white; padding: 8px 20px; border-radius: 25px; border: 1px solid #8b0000; }
+        nav ul li a.btn-quiz::after { display: none; }
+        nav ul li a.btn-quiz:hover { background-color: white; color: #8b0000; box-shadow: 0 0 15px rgba(139, 0, 0, 0.6); transform: scale(1.05); }
+
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('nen2.jpg');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            height: 60vh; /* Thu nhỏ chiều cao ảnh nền ở các trang phụ */
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px;
+        }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; margin-bottom: 10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); color: #d4af37; }
+        .hero p { font-size: 1.5rem; font-style: italic; max-width: 800px; }
+
+        .content-section { max-width: 800px; margin: 60px auto; padding: 0 20px; }
+        
+        .section-title { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #8b0000; margin: 50px 0 30px 0; text-align: center; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
+        
+        .info-block { margin-bottom: 40px; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #8b0000; }
+        .info-block h3 { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #1a1a1a; margin-bottom: 15px; }
+        .info-block p { font-size: 1.15rem; margin-bottom: 15px; text-align: justify; }
+        .info-block ul { margin-left: 30px; margin-bottom: 15px; font-size: 1.15rem; }
+        .info-block li { margin-bottom: 8px; }
+
+        .highlight-box { background-color: #f9f6f0; border-left: 4px solid #d4af37; padding: 20px; margin: 20px 0; font-style: italic; font-weight: bold; color: #8b0000; text-align: center; }
+        
+        .content-image { width: 100%; max-width: 100%; display: block; margin: 30px auto; border: 5px solid #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        
+        footer { background-color: #1a1a1a; color: white; text-align: center; padding: 20px; margin-top: 50px; font-family: Arial, sans-serif; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Tổng quan</a></li>
+                <li><a href="boi-canh.html" class="active">Bối cảnh</a></li>
+                <li><a href="duong-loi.html">Đường lối</a></li>
+                <li><a href="ngoai-giao.html">Hoạt động ngoại giao</a></li>
+                <li><a href="ket-qua.html">Kết quả / Ý nghĩa</a></li>
+                <li><a href="han-che.html">Hạn chế</a></li>
+                <li><a href="#" class="btn-quiz" target="_blank">Đố vui</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bối Cảnh Lịch Sử</h1>
+        <p>Giao thời giữa giông bão thời đại và sự thức tỉnh của dân tộc</p>
+    </section>
+
+    <main class="content-section">
+        
+        <h2 class="section-title">Bối cảnh trong nước</h2>
+        
+        <div class="info-block">
+            <h3>1. Việt Nam dưới ách đô hộ của Pháp</h3>
+            <p>Cuối thế kỉ XIX – đầu thế kỉ XX, Việt Nam đã mất độc lập hoàn toàn, trở thành thuộc địa của Pháp. Thực dân Pháp thiết lập bộ máy cai trị từ trung ương đến địa phương, chia nước ta thành 3 kỳ: Bắc Kì, Trung Kì, Nam Kì, với chế độ cai trị khác nhau nhưng mục tiêu chung là:</p>
+            <ul>
+                <li><strong>Bóc lột kinh tế:</strong> cướp ruộng đất, lập đồn điền, khai thác mỏ, đánh thuế nặng, độc quyền muối – rượu – thuốc phiện.</li>
+                <li><strong>Kìm hãm chính trị:</strong> đàn áp các phong trào yêu nước, bắt bớ, tù đày những người chống đối.</li>
+                <li><strong>Nô dịch văn hóa:</strong> hạn chế giáo dục, chỉ đào tạo tay sai, truyền bá tư tưởng “khai hóa” để che đậy sự xâm lược.</li>
+            </ul>
+            
+            <div class="highlight-box">
+                => Xã hội Việt Nam rơi vào tình trạng khủng hoảng toàn diện: Nhân dân cực khổ đói nghèo, đất nước mất chủ quyền, con đường cứu nước theo lối cũ (Cần Vương, khởi nghĩa vũ trang kiểu phong kiến) liên tiếp thất bại.
+            </div>
+        </div>
+
+        <img src="phap-thuoc.jpg" alt="Việt Nam dưới thời Pháp thuộc" class="content-image" onerror="this.style.display='none'">
+
+        <div class="info-block">
+            <h3>2. Khủng hoảng đường lối cứu nước</h3>
+            <p>Trước thời Phan Châu Trinh, các phong trào như <strong>Cần Vương</strong> hay các cuộc khởi nghĩa nông dân, sĩ phu chống Pháp đều dựa vào bạo động vũ trang kiểu cũ, tôn vua, phò triều đình phong kiến.</p>
+            <p><strong>Kết quả:</strong> Bị đàn áp đẫm máu, không lôi kéo được đông đảo quần chúng, không đánh bại được một đế quốc tư bản mạnh như Pháp.</p>
+            
+            <div class="highlight-box">
+                => Điều này khiến nhiều trí thức tiến bộ, trong đó có Phan Châu Trinh, nhận ra rằng: Muốn cứu nước thì không thể đi theo con đường phong kiến cũ, mà phải tìm một con đường mới, tiến bộ hơn.
+            </div>
+        </div>
+
+        <div class="info-block">
+            <h3>3. Tình trạng xã hội và vai trò của trí thức</h3>
+            <p>Đầu thế kỉ XX, Việt Nam bắt đầu xuất hiện một tầng lớp <strong>trí thức tân học</strong> (học chữ Quốc ngữ, chữ Pháp, tiếp xúc tư tưởng phương Tây) và một số người có ý thức cải cách xã hội, khai dân trí.</p>
+            <p>Phan Châu Trinh xuất thân là nhà nho, đỗ Phó bảng, nhưng ông:</p>
+            <ul>
+                <li><strong>Chán ghét chế độ phong kiến</strong> vì ông cho rằng chính triều đình phong kiến mục nát đã làm nước mất.</li>
+                <li><strong>Không tin vào vua quan</strong> nữa, mà đặt niềm tin vào nhân dân và công cuộc cải cách xã hội.</li>
+            </ul>
+        </div>
+
+
+        <h2 class="section-title">Bối cảnh ngoài nước</h2>
+
+        <div class="info-block">
+            <h3>Chủ nghĩa tư bản chuyển sang giai đoạn đế quốc</h3>
+            <p>Các nước phương Tây như Anh, Pháp, Đức, Mỹ, Nhật… đẩy mạnh xâm lược và chia nhau thuộc địa ở châu Á, châu Phi.</p>
+            <p><strong>Hệ quả:</strong> Việt Nam và nhiều nước châu Á rơi vào ách thống trị của thực dân. Bối cảnh này cho thấy muốn thoát khỏi tình trạng đó, dân tộc ta không thể tiếp tục đi theo con đường cũ lạc hậu.</p>
+        </div>
+
+        <img src="minh-tri.jpg" alt="Phong trào cải cách Minh Trị" class="content-image" onerror="this.style.display='none'">
+
+        <div class="info-block">
+            <h3>Ảnh hưởng của các phong trào cải cách ở châu Á</h3>
+            <ul>
+                <li><strong>Nhật Bản thời Minh Trị:</strong> Tiến hành cải cách mạnh mẽ, nhanh chóng trở thành nước giàu mạnh.</li>
+                <li><strong>Trung Quốc:</strong> Xuất hiện phong trào Duy Tân (Khang Hữu Vi, Lương Khải Siêu), kêu gọi canh tân đất nước, học hỏi phương Tây.</li>
+            </ul>
+            <p><em>→ Những tấm gương này cho thấy: muốn cứu nước phải canh tân, cải cách, nâng cao dân trí, không chỉ dựa vào khởi nghĩa vũ trang kiểu cũ.</em></p>
+        </div>
+
+        <div class="info-block">
+            <h3>Tư tưởng dân chủ tư sản phương Tây được truyền bá</h3>
+            <p>Các tư tưởng tiến bộ về tự do, dân chủ, nhân quyền, bình đẳng, hiến pháp bắt đầu len lỏi và ảnh hưởng sâu sắc tới tầng lớp trí thức Việt Nam, trong đó có Phan Châu Trinh.</p>
+            <p><em>→ Từ những luồng tư tưởng mới mẻ này, đã dần hình thành nên xu hướng chống phong kiến lạc hậu, đòi hỏi cải cách xã hội theo hướng tiến bộ, văn minh.</em></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Nhóm Cua: Tiểu sử Phan Châu Trinh</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiểu sử Phan Châu Trinh - Hạn Chế</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+            .hero h1 { 
+                font-size: 2.5rem; 
+            }
+            .hero p { 
+                font-size: 1.2rem; 
+            }
+            .section-title {
+                font-size: 2rem; 
+            }
+            nav ul li { 
+                margin: 5px 10px; 
+            }
+            .info-block {
+                padding: 15px;
+            }
+        }
+      
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #333; background-color: #fdfaf6; }
+        
+        header { background-color: #1a1a1a; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.6); }
+        nav ul { list-style: none; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding: 15px 0; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { color: #d4af37; text-decoration: none; font-weight: bold; font-size: 15px; font-family: Arial, sans-serif; text-transform: uppercase; padding: 8px 0; position: relative; transition: color 0.3s ease; }
+        nav ul li a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: 0; left: 50%; background-color: #d4af37; transition: all 0.3s ease; transform: translateX(-50%); }
+        nav ul li a:hover, nav ul li a.active { color: #ffffff; }
+        nav ul li a:hover::after, nav ul li a.active::after { width: 100%; }
+        
+        nav ul li a.btn-quiz { background-color: #8b0000; color: white; padding: 8px 20px; border-radius: 25px; border: 1px solid #8b0000; }
+        nav ul li a.btn-quiz::after { display: none; }
+        nav ul li a.btn-quiz:hover { background-color: white; color: #8b0000; box-shadow: 0 0 15px rgba(139, 0, 0, 0.6); transform: scale(1.05); }
+
+       
+        .hero {
+          
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('phap 2.jpg');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px;
+        }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; margin-bottom: 10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); color: #d4af37; }
+        .hero p { font-size: 1.5rem; font-style: italic; max-width: 800px; }
+
+        .content-section { max-width: 800px; margin: 60px auto; padding: 0 20px; }
+        
+
+        .question-box { background-color: #faeaea; border: 2px dashed #8b0000; padding: 20px; border-radius: 8px; margin-bottom: 40px; font-size: 1.2rem; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.05);}
+        .question-box strong { color: #8b0000; display: block; margin-bottom: 10px; font-family: 'Playfair Display', serif; font-size: 1.6rem;}
+
+        .info-block { margin-bottom: 40px; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #8b0000; }
+        .info-block h3 { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #1a1a1a; margin-bottom: 15px; }
+        .info-block p { font-size: 1.15rem; margin-bottom: 15px; text-align: justify; }
+        .info-block ul { margin-left: 30px; margin-bottom: 15px; font-size: 1.15rem; }
+        .info-block li { margin-bottom: 10px; }
+
+        .content-image { width: 100%; max-width: 100%; display: block; margin: 30px auto; border: 5px solid #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        
+        footer { background-color: #1a1a1a; color: white; text-align: center; padding: 20px; margin-top: 50px; font-family: Arial, sans-serif; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Tổng quan</a></li>
+                <li><a href="boi-canh.html">Bối cảnh</a></li>
+                <li><a href="duong-loi.html">Đường lối</a></li>
+                <li><a href="ngoai-giao.html">Hoạt động ngoại giao</a></li>
+                <li><a href="ket-qua.html">Kết quả / Ý nghĩa</a></li>
+                <li><a href="han-che.html" class="active">Hạn chế</a></li>
+                <li><a href="#" class="btn-quiz" target="_blank">Đố vui</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Hạn Chế & Bài Học</h1>
+        <p>Góc nhìn khách quan về nguyên nhân thất bại của phong trào</p>
+    </section>
+
+    <main class="content-section">
+
+        
+        <div class="info-block">
+            <h3>1. Nguyên nhân thất bại</h3>
+            <ul>
+                <li><strong>Sự đàn áp của thực dân Pháp:</strong> Pháp đã dùng mọi biện pháp quân sự và cảnh sát để đàn áp khốc liệt phong trào, bắt giữ và lưu đày nhiều nhà lãnh đạo chủ chốt, trong đó có Phan Châu Trinh.</li>
+                <li><strong>Hạn chế về lực lượng:</strong> Phong trào chủ yếu dựa vào tầng lớp trí thức tiến bộ và nông dân, chưa có sự lan tỏa và tham gia rộng rãi của các giai cấp khác trong xã hội.</li>
+                <li><strong>Thiếu vũ trang và tổ chức chặt chẽ:</strong> Khác với các phong trào bạo động, Duy Tân chủ trương ôn hòa, do đó không có lực lượng vũ trang mạnh và một tổ chức bí mật đủ chặt chẽ để đối đầu trực diện với chính quyền thực dân Pháp.</li>
+            </ul>
+        </div>
+
+        <img src="anh-thuc-dan-dan-ap.jpg" alt="Sự đàn áp của thực dân Pháp" class="content-image" onerror="this.style.display='none'">
+
+        <div class="info-block">
+            <h3>2. Hạn chế về phương pháp đấu tranh</h3>
+            <p>Phương pháp đấu tranh <strong>bất bạo động</strong> của Phong trào Duy Tân tuy mang tư tưởng tiến bộ nhưng lại không đủ sức mạnh vật chất để đối đầu với sự đàn áp khốc liệt, tàn bạo của thực dân Pháp.</p>
+            <p>Việc phong trào chỉ tập trung chủ yếu vào cải cách xã hội và nâng cao giáo dục mà không có sự chuẩn bị các biện pháp quân sự mạnh mẽ để tự vệ đã làm hạn chế rất lớn hiệu quả thực tế của phong trào khi bị tấn công.</p>
+        </div>
+
+        <div class="info-block">
+            <h3>3. Thiếu sự liên kết rộng rãi</h3>
+            <p>Phong trào Duy Tân chủ yếu tập trung vào tầng lớp trí thức (những nhà Nho yêu nước tiến bộ) và một bộ phận nông dân. Phong trào chưa có đường lối để thu hút được sự tham gia đông đảo của các giai cấp, tầng lớp mới nổi khác như công nhân, tiểu tư sản, và tư sản dân tộc.</p>
+            <p>Chính sự <strong>thiếu liên kết giữa các tầng lớp xã hội</strong> này đã làm giảm đi sức mạnh tổng hợp của toàn dân tộc trong công cuộc chống lại kẻ thù chung.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Nhóm Cua: Tiểu sử Phan Châu Trinh</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiểu sử Phan Châu Trinh - Trang Tổng Quan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+            .hero h1 { 
+                font-size: 2.5rem; 
+            }
+            .hero p { 
+                font-size: 1.2rem; 
+            }
+            .section-title {
+                font-size: 2rem; 
+            }
+            nav ul li { 
+                margin: 5px 10px; 
+            }
+            .info-block {
+                padding: 15px; 
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Lora', serif; line-height: 1.8; color: #333; background-color: #fdfaf6; }
+        
+        header { 
+            background-color: #1a1a1a; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6); 
+        }
+        
+        nav ul { 
+            list-style: none; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            flex-wrap: wrap; 
+            padding: 15px 0; 
+        }
+        
+        nav ul li { margin: 0 15px; }
+        
+        nav ul li a { 
+            color: #d4af37; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 15px; 
+            font-family: Arial, sans-serif; 
+            text-transform: uppercase; 
+            padding: 8px 0;
+            position: relative; 
+            transition: color 0.3s ease; 
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0; 
+            height: 2px;
+            bottom: 0;
+            left: 50%; 
+            background-color: #d4af37;
+            transition: all 0.3s ease;
+            transform: translateX(-50%); 
+        }
+
+        nav ul li a:hover, nav ul li a.active { color: #ffffff; }
+        nav ul li a:hover::after, nav ul li a.active::after { width: 100%; }
+
+        nav ul li a.btn-quiz {
+            background-color: #8b0000; 
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px; 
+            border: 1px solid #8b0000;
+        }
+
+        nav ul li a.btn-quiz::after {
+            display: none; 
+        }
+
+        nav ul li a.btn-quiz:hover {
+            background-color: white;
+            color: #8b0000;
+            box-shadow: 0 0 15px rgba(139, 0, 0, 0.6); 
+            transform: scale(1.05); 
+        }
+
+
+        .hero {
+       background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('anh-nen1.jpg');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px;
+        }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 5rem; margin-bottom: 10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); }
+        .hero p { font-size: 1.5rem; font-style: italic; max-width: 800px; }
+
+        .content-section { max-width: 800px; margin: 60px auto; padding: 0 20px; }
+        .content-section h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #8b0000; margin-bottom: 30px; text-align: center; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
+        
+        .info-block { margin-bottom: 40px; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #8b0000; }
+        .info-block h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #1a1a1a; margin-bottom: 15px; }
+        .info-block p { font-size: 1.15rem; margin-bottom: 15px; text-align: justify; }
+        .info-block ul { margin-left: 40px; margin-bottom: 15px; font-size: 1.15rem; }
+        .info-block li { margin-bottom: 8px; }
+
+        blockquote { font-size: 1.4rem; font-style: italic; color: #8b0000; border-left: 4px solid #d4af37; padding-left: 20px; margin: 30px 0; background-color: #f9f6f0; padding: 20px; }
+        
+        .content-image { width: 100%; max-width: 100%; display: block; margin: 40px auto; border: 5px solid #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        
+        .conclusion { text-align: center; font-size: 1.3rem; font-style: italic; color: #555; margin-top: 50px; padding-top: 20px; border-top: 1px solid #ccc; }
+
+        footer { background-color: #1a1a1a; color: white; text-align: center; padding: 20px; margin-top: 50px; font-family: Arial, sans-serif; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Tổng quan</a></li>
+                <li><a href="boi-canh.html">Bối cảnh</a></li>
+                <li><a href="duong-loi.html">Đường lối</a></li>
+                <li><a href="ngoai-giao.html">Hoạt động ngoại giao</a></li>
+                <li><a href="ket-qua.html">Kết quả / Ý nghĩa</a></li>
+                <li><a href="han-che.html">Hạn chế</a></li>
+                <li><a href="#" class="btn-quiz" target="_blank">Đố vui</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Phan Châu Trinh</h1>
+        <p>"Khai dân trí, chấn dân khí, hậu dân sinh"</p>
+    </section>
+
+    <main class="content-section">
+        <h2>Tổng quan về cuộc đời và sự nghiệp</h2>
+        
+        <div class="info-block">
+            <h3>1. Con người & lựa chọn cá nhân</h3>
+            <p><strong>Phan Châu Trinh (1872–1926)</strong> là nhà yêu nước, nhà tư tưởng lớn đầu thế kỉ XX. Ông quê ở Quảng Nam, xuất thân từ gia đình nhà nho. Dù đã thi đỗ Phó bảng, ông vẫn quyết định từ bỏ con đường làm quan.</p>
+            <p><strong>Thái độ với phong kiến:</strong></p>
+            <ul>
+                <li>Không tin tưởng vào hệ thống vua quan đương thời.</li>
+                <li>Không trông chờ vào một vị "minh quân" nào để cứu nước.</li>
+            </ul>
+        </div>
+
+        <img src="phap.jpg" class="content-image">
+
+        <div class="info-block">
+            <h3>2. Nhận thức cốt lõi về nguyên nhân mất nước</h3>
+            <p>Khác với nhiều sĩ phu cùng thời, Phan Châu Trinh có cái nhìn rất sắc sảo và mang tính thời đại. Ông cho rằng:</p>
+            <ul>
+                <li>Mất nước <strong>không chỉ vì</strong> thực dân Pháp có sức mạnh quân sự vượt trội.</li>
+                <li>Mà nguyên nhân sâu xa là vì: <strong>dân trí thấp kém</strong>, <strong>xã hội lạc hậu</strong>, và sự <strong>kìm hãm của chế độ phong kiến</strong> bảo thủ.</li>
+            </ul>
+        </div>
+
+        <div class="info-block">
+            <h3>3. Hệ tư tưởng gốc – Khẩu hiệu trung tâm</h3>
+            <blockquote>"Khai dân trí – Chấn dân khí – Hậu dân sinh"</blockquote>
+            <p>Dựa trên hệ tư tưởng này, chủ trương cứu nước của ông tập trung vào:</p>
+            <ul>
+                <li>Tiến hành <strong>cải cách</strong> xã hội một cách triệt để.</li>
+                <li>Đấu tranh theo phương pháp <strong>ôn hòa</strong>.</li>
+                <li>Ưu tiên <strong>chống phong kiến trước, chống Pháp sau</strong>.</li>
+            </ul>
+            <p><em>"Từ tư tưởng này, các hoạt động cải cách và đấu tranh chính trị sau đó đã hình thành."</em></p>
+        </div>
+
+        <div class="info-block">
+            <h3>4. Hoạt động tiêu biểu</h3>
+            <p>Ông tích cực tham gia phong trào Duy Tân, gắn bó mật thiết với hoạt động của Đông Kinh Nghĩa Thục, sau đó sang Pháp tiếp tục đấu tranh bằng con đường chính trị ôn hòa. </p>
+            
+            <img src="chan-dung.jpg" alt="Chân dung cụ Phan Châu Trinh" class="content-image">
+            
+            <p>Năm 1926 ông qua đời, đám tang của ông đã trở thành một sự kiện chính trị - xã hội rộng lớn, thể hiện lòng kính trọng và niềm tiếc thương vô hạn của nhân dân đối với một nhà yêu nước chân chính.</p>
+        </div>
+
+        <p class="conclusion">
+            "Những nhận thức và lựa chọn của Phan Châu Trinh không chỉ là quan điểm cá nhân, mà đã trở thành nền tảng tư tưởng cho một xu hướng cứu nước mới. Từ đây, chúng ta sẽ đi vào các khu tiếp theo để tìm hiểu cách tư tưởng ấy được triển khai trong thực tế."
+        </p>
+
+    </main>
+
+    <footer>
+        <p>Nhóm Cua: Tiểu sử Phan Châu Trinh</p>
+    </footer>
+
+</body>
+</html>
